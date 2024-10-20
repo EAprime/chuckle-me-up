@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/styles/main.css"> 
+    <title>Chuckle Me Up</title>
+</head>
+<body>
+    <h1 class="header">Chuckle Me Up 🤭</h1>
+    <div class="container">
+        <div class="joke-area">
+        <% if (locals.joke1) { %>
+           <h2> <%= joke1 %> </h2>
+            <% } else if (locals.joke2) { %>
+               <h2> <%= joke2 %> </h2>
+                <% } else {%>
+                    <h2>Want to hear a joke?</h2>
+                    <% } %> 
+        </div>
+        <div class="buttons">
+            <form id="joke-options" method="post">
+            <label for="submit">Select one for a random joke:</label>
+            <input id="one-line" type="submit" value="One Liner" formaction="/single-joke">
+            <input id="two-line" type="submit" value="Set Up & Punchline" formaction="/two-part">
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

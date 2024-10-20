@@ -1,0 +1,33 @@
+
+
+.header, .joke-area, .buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.joke-area {
+    color: white;
+    background-color: rgb(47, 146, 207);
+    border: 2px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-radius: 5px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: 450px;
+    margin-right: 450px;
+}
+
+.buttons {
+    background-color: rgb(94, 193, 94);
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 5px;
+    margin-top: 50px;
+    padding: 25px;
+    margin-left: 500px;
+    margin-right: 500px;
+}
